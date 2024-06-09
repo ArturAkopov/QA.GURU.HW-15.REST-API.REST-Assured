@@ -39,17 +39,18 @@ public class ReqresTests {
     }
 
     @Test
-    void successfulLoginTest() {
-        String authData = "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}";
+    void successfulRegistrationTest() {
+        String authData = "{\"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\"}";
         given()
                 .body(authData)
                 .contentType(JSON)
                 .log().all()
                 .when()
-                .post("https://reqres.in/api/login")
+                .post("https://reqres.in/api/register")
                 .then()
                 .log().all()
                 .statusCode(200)
+                .body("id",is(4))
                 .body("token", is("QpwL5tke4Pnpja7X4"));
     }
 
