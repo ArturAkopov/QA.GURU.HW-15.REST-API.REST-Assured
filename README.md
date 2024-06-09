@@ -1,2 +1,4 @@
-# 15.REST-API.REST-Assured
-QA.GURU | Java | Автоматизация тестирования 27 поток. ДЗ
+## 15.REST-API.REST-Assured
+### Домашнее задание №15
+
+Разработайте 5 автотестов на запросы из https://reqres.in/
